@@ -140,7 +140,7 @@ jobs:
         source: "docker-compose.production.yml"
         target: "taski"
     - name: Executing remote ssh comands to deploy
-      uses: aplleboy/ssh-action@master
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
